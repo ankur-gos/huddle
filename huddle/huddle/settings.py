@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'huddle.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.psycopg2',
+        'NAME': 'huddle',
+        'USER': 'ankur',
+        'PASSWORD': 'Asp123',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
