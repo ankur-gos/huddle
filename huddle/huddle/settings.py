@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'huddleapp.apps.HuddleappConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'huddle.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['huddleapp/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -76,7 +77,7 @@ WSGI_APPLICATION = 'huddle.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.psycopg2',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'huddle',
         'USER': 'ankur',
         'PASSWORD': 'Asp123',
@@ -121,5 +122,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
-
+STATIC_ROOT = ''
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(os.path.dirname(__file__),'media').replace('\\','/'),)
