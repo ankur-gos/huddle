@@ -79,7 +79,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'huddle',
-        'USER': 'ankur',
+        'USER': 'ankur1',
         'PASSWORD': 'Asp123',
         'HOST': 'localhost',
         'PORT': '',

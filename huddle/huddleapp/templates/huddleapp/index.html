@@ -5,6 +5,11 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <script src="{% static "huddleapp/csrfProtection.js" %}" async></script>
+  <script src="{% static "huddleapp/hideAdd.js" %}" async></script>
+  <script src="{% static "huddleapp/createPost.js" %}" async></script>
+  <script src="{% static "huddleapp/getPosts.js" %}" async></script>
+
   <!-- <link rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
     integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
@@ -37,18 +42,18 @@
   <div class="main">
       <nav class="scrollnav">
         <div class="input-menu">
-          <button type="button" class="btn btn-default btn-custom" aria-label="Left Align">
+          <button type="button" class="btn btn-default btn-custom" aria-label="Left Align" id="hidePost">
             <span class="glyphicon glyphicon-plus"aria-hidden="true"></span> Add Post
           </button>
           <div class="hide-add"> 
-            <input type="text" placeholder=" Title" class="comment-input-wide top-padding-plus bottom-spaced">
-           <textarea placeholder="Post Body" class="post-body bottom-spaced"></textarea>
-            <button type="button" class="btn btn-default btn-custom" aria-label="Left Align">
+            <input type="text" placeholder=" Title" class="comment-input-wide top-padding-plus bottom-spaced" id="addTitle">
+           <textarea placeholder="Post Body" class="post-body bottom-spaced" id="addBody"></textarea>
+            <button type="button" class="btn btn-default btn-custom" aria-label="Left Align" id="addPost">
               <span class="glyphicon glyphicon-ok"aria-hidden="true"></span> Submit
             </button>
           </div>
         </div>
-        <ul class="list-unstyled">
+        <ul class="list-unstyled" id="postList">
           <li class="post">
               <span class="post-title">How to start Q2?</span><br>
             <span class="post-text">Hi, I was wondering how I was supposed to start
