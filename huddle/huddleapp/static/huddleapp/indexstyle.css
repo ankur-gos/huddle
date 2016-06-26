@@ -1,6 +1,7 @@
 .scrollnav{
+  display:inline-block;
   background-color: #E8E8E8;
-  height:100vh;
+  height: 100%;
   width:20%;
   border-right: 1px solid #000000;
 }
@@ -24,3 +25,117 @@
 .post-text{
   font-size: 12px;
 }
+
+.main{
+  width: 100%;
+  margin:0 auto;
+}
+
+.bottom-spaced{
+  margin-bottom: 10px;
+}
+
+.post-detail-title{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.row{
+  display: table-row;
+}
+
+
+.detail{
+  display: inline-block;
+  height: 100%;
+  width: 70%;
+  text-align:left;
+  vertical-align: top;
+  margin: 1% auto;
+  margin-left: 20px;
+}
+
+.bottom-separated{
+  border-bottom: 1px solid #D0D0D0
+}
+
+.direct-followups{
+  background-color: #F8F8F8;
+  margin-bottom: 10px;
+}
+
+.secondary-followups{
+  margin-left: 20px;
+}
+
+.followup-title{
+  font-size: 12px;
+  font-weight:bold;
+}
+
+.followup-body{
+  font-size: 12px;
+}
+
+.bottom-small-spaced{
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.top-padding{
+  margin-top: 5px;
+}
+
+.top-padding-plus{
+  margin-top: 10px;
+}
+
+.comment-input{
+  width: 75%;
+  height: 30px;
+  font-size: 12px;
+}
+
+.comment-input-wide{
+  width: 100%;
+  height: 30px;
+  font-size: 12px;
+}
+
+.comment-submit{
+``width: 60px;
+  height: 30px;
+  background-color: #bd261f;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: white;
+  font-size:12px;
+  box-shadow: none;
+}
+
+.post-body{
+  padding: 5px;
+  width: 100%;
+  height: 200px;
+  font-size: 12px; 
+}
+
+.btn-custom{
+  background-color: #bd261f !important;
+  color: white !important;
+}
+
+.input-menu{
+  padding:10px;
+  border-bottom: 1px solid #D0D0D0;
+}
+
+textarea {
+  border: none;
+}
+
+.hide-add{
+  display:none;
+}
+

@@ -34,14 +34,99 @@
     </div>
   </nav>
 
-  <nav class="scrollnav">
-    <ul class="list-unstyled">
-      <li class="post">
-        <span class="post-title">How to start Q2?</span><br>
-        <span class="post-text">Hi, I was wondering how I was supposed to start
-          question 2</span>
-      </li>
-      <li> 1 </li>
-    </ul>
-  </nav>
+  <div class="main">
+      <nav class="scrollnav">
+        <div class="input-menu">
+          <button type="button" class="btn btn-default btn-custom" aria-label="Left Align">
+            <span class="glyphicon glyphicon-plus"aria-hidden="true"></span> Add Post
+          </button>
+          <div class="hide-add"> 
+            <input type="text" placeholder=" Title" class="comment-input-wide top-padding-plus bottom-spaced">
+           <textarea placeholder="Post Body" class="post-body bottom-spaced"></textarea>
+            <button type="button" class="btn btn-default btn-custom" aria-label="Left Align">
+              <span class="glyphicon glyphicon-ok"aria-hidden="true"></span> Submit
+            </button>
+          </div>
+        </div>
+        <ul class="list-unstyled">
+          <li class="post">
+              <span class="post-title">How to start Q2?</span><br>
+            <span class="post-text">Hi, I was wondering how I was supposed to start
+              question 2</span>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="detail">
+        <div class="bottom-spaced">
+          <span class="post-detail-title">How to start Q2?</span><br>
+        </div>
+        <div class="bottom-separated bottom-spaced">
+          <p class="post-detail-body">Hi, I was wondering how I was supposed to start question 2</span><br>
+        </div>
+
+        <div class="bottom-separated bottom-spaced">
+          <div class="bottom-spaced">
+            <span class="post-title"> Instructor's Answer </span>
+          </div>
+          <p class="post-detail-body bottom-spaced"></p>
+        </div>
+
+        <div class="bottom-separated bottom-spaced">
+          <div class="bottom-spaced">
+            <span class="post-title"> Students' Answer </span>
+          </div>
+          <p class="post-detail-body bottom-spaced"> Wow! What a great question!</p>
+        </div>
+
+        <div class="bottom-spaced">
+          <span class="post-title"> Followups </span>
+        </div>
+
+        <ul class="direct-followups list-unstyled">
+          <li>
+            <div class="bottom-small-spaced">
+              <span class="followup-title">Anonymous</span>
+            </div>
+            <p class="followup-body bottom-small-spaced bottom-separated">
+              Hey, I had a followup.
+            </p>
+            <ul class="secondary-followups list-unstyled">
+              <li class="bottom-separated">
+                <div class="bottom-small-spaced">
+                  <span class="followup-title">Anonymous</span>
+                </div>
+                <p class="followup-body bottom-small-spaced">
+                  Hey, I had a secondary followup.
+                </p>
+              </li>
+              <li class="bottom-separated">
+                <div class="bottom-small-spaced">
+                  <span class="followup-title">Anonymous</span>
+                </div>
+                <p class="followup-body bottom-small-spaced">
+                  Hey, I had another secondary followup.
+                </p>
+              </li>
+              <li class="bottom-separated">
+                <input type="text" placeholder=" Add a comment..." class="comment-input">
+                <input type="submit" class="comment-submit">
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="bottom-small-spaced top-padding">
+              <span class="followup-title">Add a followup discussion:</span>
+            </div>
+            <form class="top-padding bottom-small-spaced">
+              <input type="text" placeholder=" Add a followup..." class="comment-input">
+              <input type="submit" class="comment-submit">
+            </form>
+          </li>
+        </ul>
+
+      </div>
+  </div>
+
 </body>
