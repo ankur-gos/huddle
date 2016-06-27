@@ -18,6 +18,7 @@ function getPosts(){
                       + '</span></li>';
         $("#postList").append(element);
       }
+      getPostDetail();
     });
 }
 getPosts();
