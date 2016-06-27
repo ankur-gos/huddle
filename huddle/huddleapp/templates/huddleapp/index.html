@@ -65,10 +65,10 @@
 
       <div class="detail">
         <div class="bottom-spaced">
-          <span class="post-detail-title detail-title">How to start Q2?</span><br>
+          <span class="post-detail-title detail-title"></span><br>
         </div>
         <div class="bottom-separated bottom-spaced">
-          <p class="post-detail-body detail-body">Hi, I was wondering how I was supposed to start question 2</span><br>
+          <p class="post-detail-body detail-body"></span><br>
         </div>
 
         <div class="bottom-separated bottom-spaced">
@@ -82,7 +82,16 @@
           <div class="bottom-spaced">
             <span class="post-title"> Students' Answer </span>
           </div>
-          <p class="post-detail-body bottom-spaced student-answer"> Wow! What a great question!</p>
+          <p class="post-detail-body bottom-spaced student-answer"></p>
+          <textarea placeholder="Add an answer!" class="input-detail-body bottom-spaced" id="studentEdit"></textarea>
+          <div class="bottom-spaced">
+            <button type="button" class="btn btn-default btn-sm btn-custom" aria-label="Left Align" id="addStudentAnswer">
+              <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit
+            </button>
+            <button type="button" class="btn btn-default btn-sm btn-custom" aria-label="Left Align" id="submitStudentAnswer">
+              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Submit
+            </button>
+          </div>
         </div>
 
         <div class="bottom-spaced">
@@ -90,46 +99,6 @@
         </div>
 
         <ul class="direct-followups list-unstyled">
-          <li>
-            <div class="bottom-small-spaced">
-              <span class="followup-title">Anonymous</span>
-            </div>
-            <p class="followup-body bottom-small-spaced bottom-separated">
-              Hey, I had a followup.
-            </p>
-            <ul class="secondary-followups list-unstyled">
-              <li class="bottom-separated">
-                <div class="bottom-small-spaced">
-                  <span class="followup-title">Anonymous</span>
-                </div>
-                <p class="followup-body bottom-small-spaced">
-                  Hey, I had a secondary followup.
-                </p>
-              </li>
-              <li class="bottom-separated">
-                <div class="bottom-small-spaced">
-                  <span class="followup-title">Anonymous</span>
-                </div>
-                <p class="followup-body bottom-small-spaced">
-                  Hey, I had another secondary followup.
-                </p>
-              </li>
-              <li class="bottom-separated">
-                <input type="text" placeholder=" Add a comment..." class="comment-input">
-                <input type="submit" class="comment-submit">
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            <div class="bottom-small-spaced top-padding">
-              <span class="followup-title">Add a followup discussion:</span>
-            </div>
-            <form class="top-padding bottom-small-spaced">
-              <input type="text" placeholder=" Add a followup..." class="comment-input">
-              <input type="submit" class="comment-submit">
-            </form>
-          </li>
         </ul>
 
       </div>

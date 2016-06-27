@@ -5,4 +5,6 @@
 
 $("#hidePost").click(function(){
   $(".hide-add").toggle();
+  $("#addTitle").val("");
+  $("#addBody").val("");
 });

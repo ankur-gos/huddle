@@ -11,6 +11,9 @@ function addPost(){
     $.post("/post/", {title: title, body: body})
       .done(function(data){
         getPosts();
+        $(".hide-add").toggle();
+        $("#addTitle").val("");
+        $("#addBody").val("");
       });
   });
 }
